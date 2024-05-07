@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NexGen-Store</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <h1 class="heading">NexGen-Store</h1>
+        <li><a href="Footer">Footer</a></li>
+        <li><a href="Products">Products</a></li>
+        <li><a href="Header">Header</a></li>
+      </ul>
+    </nav>
+    <br />
+
+    <!-- Header Section -->
+    <div class="flex-container">
+      <section class="Header">
+        <div class="hero">
+          <h1>NexGen-Store</h1>
+          <p>Learn about our products and services.</p>
+          <a href="/products" class="btn-primary">View products</a>
+        </div>
+        <br />
+        <!-- Placeholder Section  -->
+        <form action="/action_page.php">
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" /><br /><br />
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname" /><br /><br />
+          <input type="submit" value="Submit" />
+        </form>
+
+        <form action="/action_page.php">
+          <label for="phone">Enter a phone number:</label><br /><br />
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="123-45-678"
+            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+          /><br /><br />
+          <small>Format: 123-45-678</small><br /><br />
+          <input type="submit" />
+        </form>
+      </section>
+    </div>
+
+    <!-- Product Section  -->
+    <section>
+      <h1>Products</h1>
+      <div class="grid">
+        <div class="card">
+          <img
+            src="shop images/sporty.jpg"
+            alt="sports equipment"
+            style="width: 100%"
+          />
+          <h3>Sports Equipment</h3>
+          <p class="price">Ksh50,000</p>
+          <p>Super durable equipment for all kinds of games.</p>
+          <p><button>Shop Now!</button></p>
+        </div>
+
+        <div class="card">
+          <img src="shop images/fruits.jpg" alt="Fruits" style="width: 100%" />
+          <h3>Fruits</h3>
+          <p class="price">Ksh800</p>
+          <p>Fresh and juicy fruits from the farm.</p>
+          <p><button>Shop Now!</button></p>
+        </div>
+
+        <div class="card">
+          <img
+            src="shop images/Furniture.jpg"
+            alt="Furniture"
+            style="width: 100%"
+          />
+          <h3>Furniture</h3>
+          <p class="price">Ksh400,000</p>
+          <p>
+            Furniture made with the best wood to ensure durability over years
+            after purchase.
+          </p>
+          <p><button>Shop Now!</button></p>
+        </div>
+
+        <div class="card">
+          <img src="shop images/coke.jpg" alt="Fast food" style="width: 100%" />
+          <h3>Fast Foods</h3>
+          <p class="price">Ksh450</p>
+          <p>
+            Fresh and delicious food from any fast food restuarants countrywide.
+          </p>
+          <p><button>Shop Now!</button></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Placeholder Section  -->
+    <form action="/action_page.php">
+      <label for="Product">Product:</label><br /><br />
+      <input
+        type="text"
+        id="product"
+        name="product title"
+        placeholder="Product Name"
+        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+      /><br /><br />
+      <input type="submit" />
+    </form>
+
+    <!-- Footer Section  -->
+    <section>
+      <footer>copyright&copy;2024 NexGen-Store</footer>
+    </section>
+  </body>
+</html>

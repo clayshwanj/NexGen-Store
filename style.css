@@ -1,0 +1,127 @@
+.navbar ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  display: inline;
+}
+.navbar a {
+  text-decoration: none;
+  padding: 15px;
+  text-align: center;
+  color: aquamarine;
+}
+.navbar li {
+  float: right;
+}
+.navbar {
+  background-color: #333;
+}
+.navbar a:hover {
+  background-color: hsl(0, 0%, 21%);
+}
+.heading {
+  color: rgb(37, 139, 105);
+}
+nav h1 {
+  display: inline;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: #fff;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+img:hover {
+  opacity: 1;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("shop images/shopping basket.jpg");
+  height: 900px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: goldenrod;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  background-color: cornflowerblue;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+body {
+  background-color: blanchedalmond;
+  display: grid;
+}
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  repeat: (auto-fit, minmax(250px));
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    width: 100%;
+    height: 100%;
+  }
+  .grid {
+    gap: 3rem;
+    grid-template-columns: 100px 1fr;
+  }
+}
